@@ -16,7 +16,7 @@ This repository contains end-to-end AI and machine learning projects that apply 
 - Achieved **~99% accuracy** on test set
 - Interactive CLI quiz: guess if a headline is real or fake, compare to model’s prediction
 
-[**View Project Code →**](fake_news_classifier/fake_news_classifier.py)  
+[**View Project Code →**]([fake_news_classifier/fake_news_classifier.py](https://github.com/RyanVukicevic/AI-Projects/blob/main/deep_learning_determine_fake_news_by_headline_with_tensorflow_and_keras.py))  
 [**View Detailed README →**](fake_news_classifier/README.md)
 
 ---
@@ -30,7 +30,7 @@ This repository contains end-to-end AI and machine learning projects that apply 
 - Achieved **MAE < 1** on test data
 - Interactive CLI game: guess the addiction score from user stats and compare to model
 
-[**View Project Code →**](social_media_addiction/social_media_addiction.py)  
+[**View Project Code →**]([social_media_addiction/social_media_addiction.py](https://github.com/RyanVukicevic/AI-Projects/blob/main/social_media_addiction_analysis_and_prediction_with_feedforward_neural_network.py))  
 [**View Detailed README →**](social_media_addiction/README.md)
 
 ---
