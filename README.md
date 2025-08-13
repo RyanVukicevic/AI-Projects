@@ -6,7 +6,7 @@ This repository contains end-to-end AI and machine learning projects that apply 
 
 ## Projects
 
-### 1. Fake News Detection by Headline (LSTM + Keras/TensorFlow)
+### 1. Fake News Classifier Using LSTM Neural Network
 **Goal:** Predict whether a news headline is real or fake using only its text.  
 **Dataset:** [Fake and Real News Dataset (Kaggle)](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?resource=download&select=Fake.csv)  
 **Key Features:**
@@ -16,12 +16,9 @@ This repository contains end-to-end AI and machine learning projects that apply 
 - Achieved **~99% accuracy** on test set
 - Interactive CLI quiz: guess if a headline is real or fake, compare to model’s prediction
 
-[**View Project Code →**]([fake_news_classifier/fake_news_classifier.py](https://github.com/RyanVukicevic/AI-Projects/blob/main/deep_learning_determine_fake_news_by_headline_with_tensorflow_and_keras.py))  
-[**View Detailed README →**](fake_news_classifier/README.md)
-
 ---
 
-### 2. Social Media Addiction Prediction (Feedforward Neural Network)
+### 2. Social Media Addiction Analysis and Prediction with Feedforward Neural Network
 **Goal:** Predict a student’s social media addiction score (0–10) from behavioral and demographic data.  
 **Dataset:** [Social Media Addiction vs Relationships (Kaggle)](https://www.kaggle.com/datasets/adilshamim8/social-media-addiction-vs-relationships?resource=download)  
 **Key Features:**
@@ -29,9 +26,6 @@ This repository contains end-to-end AI and machine learning projects that apply 
 - Feedforward regression model with ReLU activations
 - Achieved **MAE < 1** on test data
 - Interactive CLI game: guess the addiction score from user stats and compare to model
-
-[**View Project Code →**]([social_media_addiction/social_media_addiction.py](https://github.com/RyanVukicevic/AI-Projects/blob/main/social_media_addiction_analysis_and_prediction_with_feedforward_neural_network.py))  
-[**View Detailed README →**](social_media_addiction/README.md)
 
 ---
 
