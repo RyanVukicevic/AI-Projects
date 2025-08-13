@@ -1,60 +1,46 @@
+# Social Media Addiction Prediction (Feedforward Neural Network)
 
-
-## **Social Media Addiction Prediction — `social_media_addiction/README.md`**
-```markdown
-#  Social Media Addiction Prediction (Feedforward Neural Network)
-
-##  Overview
-This project predicts a student's **Social Media Addiction Score** (0–10) based on behavioral and demographic data.  
-A feedforward neural network is trained to minimize **Mean Absolute Error (MAE)** and delivers **MAE < 1** on test data.
+## Overview
+Predicts a student’s **Social Media Addiction Score (0–10)** from behavior, demographics, and lifestyle features using a feedforward network with **MAE < 1**.
 
 ---
 
-##  Dataset
-- **Source:** [Social Media Addiction vs Relationships (Kaggle)](https://www.kaggle.com/datasets/adilshamim8/social-media-addiction-vs-relationships?resource=download)
-- **Target Variable:** `Addicted_Score` (integer 0–10)
+## Dataset
+- **Source:** [Social Media Addiction vs. Relationships (Kaggle)](https://www.kaggle.com/datasets/adilshamim8/social-media-addiction-vs-relationships)
+- **Target:** `Addicted_Score` (integer 0–10)
 
 ---
 
 ## Process
 1. **Data Preprocessing**
-   - Removed unnecessary columns (`Country`, `Age`).
-   - Filtered to top 5 most-used platforms.
-   - Encoded categorical variables:
-     - Binary mapping for yes/no.
-     - Ordinal encoding for education level.
-     - One-hot encoding for gender, platform, relationship status.
-   - Scaled numerical features with `StandardScaler`.
+   - Dropped `Country`, `Age`; filtered to top platforms (Instagram, Twitter, TikTok, YouTube, Facebook)
+   - Encodings: binary (Yes/No), ordinal (`Academic_Level`), one-hot (gender, platform, relationship)
+   - Converted all features to numeric; **StandardScaler** on numerics
 2. **Model Architecture**
-   - Dense(32, ReLU) → Dense(16, ReLU) → Dense(1)  
-     *(No activation for regression output)*
-   - Optimized with `adam` and `mse` loss.
-3. **Training**
-   - 100 epochs, batch size = 16.
-   - Used validation split for monitoring.
-4. **Evaluation**
-   - Achieved **MAE < 1** on test data.
+   - Dense(32, ReLU) → Dense(16, ReLU) → Dense(1)
+   - Optimizer: `adam` · Loss: `mse` · Metric: `mae`
+3. **Evaluation**
+   - 80/20 train–test split with validation monitoring
+   - **MAE < 1** on test data
 
 ---
 
 ## Results
-- **Test MAE:** < 1
-- Model accurately predicted scores within ±1 of actual values for most students.
+- **Low MAE** indicates accurate score predictions
+- Strong associations with higher scores:
+  - Greater daily usage hours
+  - Lower sleep duration
+  - Academic performance concerns
 
 ---
 
 ## Interactive Demo
-The script includes a CLI game where:
-- A random student's stats are shown.
-- You guess their addiction score.
-- The model’s prediction and both errors (yours vs. model) are displayed.
+CLI game:
+- Shows anonymized user stats
+- You guess the addiction score
+- Compares your error vs. the model’s error
 
 ---
 
 ## Technologies
-- **Python**
-- **TensorFlow / Keras**
-- **Scikit-Learn**
-- **NumPy, Pandas**
-- **Matplotlib**
-
+**Python**, **TensorFlow/Keras**, **Scikit-Learn**, **NumPy**, **Pandas**, **Matplotlib**
