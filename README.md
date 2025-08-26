@@ -6,7 +6,7 @@ This repository contains end-to-end AI and machine learning projects that apply 
 
 ## Projects
 
-### 1. Food Recipe Retrieval-Augmented Generation (RAG with LangChain + Hugging Face)
+### 1. Food Recipe LLM with Retrieval-Augmented Generation (RAG with LangChain + Hugging Face)
 **Goal:** Build an AI recipe assistant that generates complete recipes for user queries (e.g., *pizza recipe*, *pasta recipe*) using **retrieval-augmented generation (RAG)**.  
 **Dataset:** [RecipeNLG (Kaggle)](https://www.kaggle.com/datasets/paultimothymooney/recipenlg) (2.2M recipes, subset of 100k used)  
 **Key Features:**
