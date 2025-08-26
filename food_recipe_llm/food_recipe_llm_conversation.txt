@@ -1,3 +1,4 @@
+
 Queries are entered by the user, in this case, me. Everything following that is my Food Recipe LLM's response
 Here are 3 queries, where I ask for a pizza, pasta, and salad recipe and my LLM uses RAG to fulfill my requests
 
@@ -64,6 +65,8 @@ Directions:
 2. Sprinkle over the blue cheese crumbles and fresh basil leaves. Gently toss everything together until well combined. If desired, drizzle some of your chosen dressing over the salad just before serving. Serve immediately as it's best enjoyed when chilled. Enjoy!
 
 Note: This classic Cobb salad is perfect for any occasion - from casual lunches at home to elegant dinner parties. Feel free to customize according to personal preferences by adding other proteins like grilled chicken breast or turkey sausage, roasted vegetables such as zucchini or sweet potatoes, or even nuts like walnuts or pecans for extra texture and flavor. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
